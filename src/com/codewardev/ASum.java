@@ -5,11 +5,8 @@ package com.codewardev;
 public class ASum {
 
 	public static long findNb(long m) {
-		long n=0, total=0;
-		while(total < m) {
-			n++;
-			total += n*n*n;
-		}
+		long n, total;
+		for(n=0, total=0; total < m; n++, total+=n*n*n) {}
 		
 		return total == m? n : -1;
 	}
