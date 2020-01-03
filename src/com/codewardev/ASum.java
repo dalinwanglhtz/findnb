@@ -5,14 +5,11 @@ package com.codewardev;
 public class ASum {
 
 	public static long findNb(long m) {
-		long n=0;
-		long total=0;
+		long n=0, total=0;
 		while(total < m) {
 			n++;
 			total += n*n*n;
-			//System.out.println("Result: "+total+"/"+m);
 		}
-		System.out.println("Total: "+total+" n= "+n+" m="+m);
 		
 		return total == m? n : -1;
 	}
